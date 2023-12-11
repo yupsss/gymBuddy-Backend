@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+<body>
+    
+    <%- include('./partials/nav.ejs') %>
+    <div class="container">
+        <p><%= workouts %></p>
+        <div class="list">
+            <% const len = workouts.length %>
+            <div class="workouts">
+            <% for(i=0; i<len; i++){%>
+                
+                <div class="workout">
+                    <a href=""><h2><%= workouts[i].title %></h2></a>
+                </div>
+                
+                <% }%>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
